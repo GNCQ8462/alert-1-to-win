@@ -1,5 +1,5 @@
 # alert-1-to-win
-solutions for xss wargame https://alf.nu/alert1
+solutions for xss wargame alert(1) to win https://alf.nu/alert1
 
 ## Pretty (32)
 I know many people already solved this level, but since I couldn't find payload on the internet so I decided to upload it.
