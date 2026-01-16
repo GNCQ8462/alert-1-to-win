@@ -24,11 +24,16 @@ function escape(input) {
 ```
 input:
 ```
-{ "src": ["a onerror=alert(1)"]}
+{"src": ["a onerror=alert(1)"]}
 ```
 output:
 ```
 <img src=a onerror=alert(1)>hello</span>
+```
+
+this also works. (found from access token provided by https://github.com/1bitrs/alert-1-to-win)
+```
+{"src":"","alt":"a onerror=alert(1) "}
 ```
 
 ## Quine (63)
